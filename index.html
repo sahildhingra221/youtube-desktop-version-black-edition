@@ -1,0 +1,3564 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <title>YouTube - Black Edition</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/aside-menu.css">
+  <link rel="stylesheet" href="assets/css/page-setting_menu.css">
+  <link rel="stylesheet" href="assets/css/vd-sec.css">
+  <link rel="icon" href="assets/i/icons/yt-ico.png">
+  <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <header class="hero-header_main">
+    <div class="hero-header_main-logo-side">
+      <div class="dropdown">
+        <div onclick="myFunction()" class="dropbtn">
+          <div class="dropbtn-bars has-bar_fst"></div>
+          <div class="dropbtn-bars has-bar_scnd"></div>
+          <div class="dropbtn-bars has-bar_thrd"></div>
+        </div>
+      </div>
+      <div class="logo-ar">
+        <img src="assets/i/logo/yt-logo_main.png" class="yt-logo_main"><span class="contry-loc">IN</span>
+      </div>
+      <div class="hero-header_main-search-bar">
+        <input type="text" placeholder="Search">
+        <div class="hero-header_main-search-bar-btn">
+          <img src="assets/i/icons/search-ico.png" class="hero-header_main-search-icon">
+        </div>
+      </div>
+    </div>
+    <div class="hero-header_main-acnt-side">
+      <div class="hero-header_main-acnt-side--upload">
+        <img src="assets/i/icons/upload-ico.png">
+      </div>
+      <div class="page-setting_dropdown">
+        <div onclick="myFunctionthis()" class="page-setting_dropbtn">
+          <div class="page-setting_dropbtn-hoop has-hoop_fst"></div>
+          <div class="page-setting_dropbtn-hoop has-hoop_scnd"></div>
+          <div class="page-setting_dropbtn-hoop has-hoop_thrd"></div>
+        </div>
+      </div>
+      <div class="hero-header_main-acnt-side--signin-opt">
+        <a href="#" class="signin-opt_link">
+          SIGN IN
+        </a>
+      </div>
+    </div>
+  </header>
+  <div id="myDropdown" class="dropdown-content scroll">
+    <div class="yt-tabs">
+      <a href="#" class="yt-tab_links">
+        <div class="yt-tab-icos">
+          <div class="yt-tab-icos-sec">
+            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" class="style-scope yt-icon" style="pointer-events: none;display: block;width: 100%;height: 100%;">
+              <g class="style-scope yt-icon">
+                <path fill="hsl(3, 81.8%, 49.6%)" d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8" class="style-scope yt-icon">
+                </path>
+              </g>
+            </svg>
+          </div>
+        </div>
+        <div class="yt-tab-names">
+          Home
+        </div>
+      </a>
+      <a href="#" class="yt-tab_links">
+        <div class="yt-tab-icos">
+          <div class="yt-tab-icos-sec">
+            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon">
+        
+        <path fill="hsl(0, 0%, 53.3%)" d="M17.53 11.2c-.23-.3-.5-.56-.76-.82-.65-.6-1.4-1.03-2.03-1.66-1.46-1.46-1.78-3.87-.85-5.72-.9.23-1.75.75-2.45 1.32C8.9 6.4 7.9 10.07 9.1 13.22c.04.1.08.2.08.33 0 .22-.15.42-.35.5-.22.1-.46.04-.64-.12-.06-.05-.1-.1-.15-.17-1.1-1.43-1.28-3.48-.53-5.12C5.87 10 5 12.3 5.12 14.47c.04.5.1 1 .27 1.5.14.6.4 1.2.72 1.73 1.04 1.73 2.87 2.97 4.84 3.22 2.1.27 4.35-.12 5.96-1.6 1.8-1.66 2.45-4.3 1.5-6.6l-.13-.26c-.2-.45-.47-.87-.78-1.25zm-3.1 6.3c-.28.24-.73.5-1.08.6-1.1.38-2.2-.16-2.88-.82 1.2-.28 1.9-1.16 2.1-2.05.17-.8-.14-1.46-.27-2.23-.12-.74-.1-1.37.2-2.06.15.38.35.76.58 1.06.76 1 1.95 1.44 2.2 2.8.04.14.06.28.06.43.03.82-.32 1.72-.92 2.26z" class="style-scope yt-icon"></path>
+      </g></svg>
+
+          </div>
+        </div>
+        <div class="yt-tab-names">
+          Trending
+        </div>
+      </a>
+      <a href="#" class="yt-tab_links">
+        <div class="yt-tab-icos">
+          <div class="yt-tab-icos-sec">
+            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon">
+        <path fill="hsl(0, 0%, 53.3%)" d="M11.9 3.75c-4.55 0-8.23 3.7-8.23 8.25H.92l3.57 3.57.04.13 3.7-3.7H5.5c0-3.54 2.87-6.42 6.42-6.42 3.54 0 6.4 2.88 6.4 6.42s-2.86 6.42-6.4 6.42c-1.78 0-3.38-.73-4.54-1.9l-1.3 1.3c1.5 1.5 3.55 2.43 5.83 2.43 4.58 0 8.28-3.7 8.28-8.25 0-4.56-3.7-8.25-8.26-8.25zM11 8.33v4.6l3.92 2.3.66-1.1-3.2-1.9v-3.9H11z" class="style-scope yt-icon"></path>
+      </g></svg>
+
+          </div>
+        </div>
+        <div class="yt-tab-names">
+          History
+        </div>
+      </a>
+    </div>
+    <div class="m-line-break"></div>
+    <div class="yt-guide">
+      <h2 class="yt-guide-heading">BEST OF YOUTUBE</h2>
+      <a href="#" class="yt-guide-links">
+        <div class="yt-guide-icos">
+          <div class="yt-guide-icos-sec">
+            <img src="assets/i/icons/music.jpg">
+          </div>
+        </div>
+        <div class="yt-guide-names">
+          Music
+        </div>
+      </a>
+      <a href="#" class="yt-guide-links">
+        <div class="yt-guide-icos">
+          <div class="yt-guide-icos-sec">
+            <img src="assets/i/icons/sports.jpg">
+          </div>
+        </div>
+        <div class="yt-guide-names">
+          Sports
+        </div>
+      </a>
+      <a href="#" class="yt-guide-links">
+        <div class="yt-guide-icos">
+          <div class="yt-guide-icos-sec">
+            <img src="assets/i/icons/gaming.jpg">
+          </div>
+        </div>
+        <div class="yt-guide-names">
+          Gaming
+        </div>
+      </a>
+      <a href="#" class="yt-guide-links">
+        <div class="yt-guide-icos">
+          <div class="yt-guide-icos-sec">
+            <img src="assets/i/icons/movies.jpg">
+          </div>
+        </div>
+        <div class="yt-guide-names">
+          Movies
+        </div>
+      </a>
+      <a href="#" class="yt-guide-links">
+        <div class="yt-guide-icos">
+          <div class="yt-guide-icos-sec">
+            <img src="assets/i/icons/tv-shows.jpg">
+          </div>
+        </div>
+        <div class="yt-guide-names">
+          TV Shows
+        </div>
+      </a>
+      <a href="#" class="yt-guide-links">
+        <div class="yt-guide-icos">
+          <div class="yt-guide-icos-sec">
+            <img src="assets/i/icons/news.jpg">
+          </div>
+        </div>
+        <div class="yt-guide-names">
+          News
+        </div>
+      </a>
+      <a href="#" class="yt-guide-links">
+        <div class="yt-guide-icos">
+          <div class="yt-guide-icos-sec">
+            <img src="assets/i/icons/live.jpg">
+          </div>
+        </div>
+        <div class="yt-guide-names">
+          Live
+        </div>
+      </a>
+      <a href="#" class="yt-guide-links">
+        <div class="yt-guide-icos">
+          <div class="yt-guide-icos-sec">
+            <img src="assets/i/icons/spotlight.jpg">
+          </div>
+        </div>
+        <div class="yt-guide-names">
+          Spotlight
+        </div>
+      </a>
+      <a href="#" class="yt-guide-links">
+        <div class="yt-guide-icos">
+          <div class="yt-guide-icos-sec">
+            <img src="assets/i/icons/360-deg-video.jpg">
+          </div>
+        </div>
+        <div class="yt-guide-names">
+          360° Video
+        </div>
+      </a>
+    </div>
+    <div class="m-line-break"></div>
+    <div class="yt-guide">
+      <a href="#" class="yt-guide-links">
+        <div class="yt-guide-icos">
+          <div class="yt-guide-icos-sec">
+            <img src="assets/i/icons/browse-chnl.png">
+          </div>
+        </div>
+        <div class="yt-guide-names">
+          Browse Channels
+        </div>
+      </a>
+    </div>
+    <div class="m-line-break"></div>
+    <div class="recomnd">
+      <div class="recomnd-para">
+        Sign in now to see your channels and recommendations!
+      </div>
+      <a href="#" class="recomnd-link">
+        SIGN IN
+      </a>
+    </div>
+    <div class="m-line-break"></div>
+    <div class="yt-tabs">
+      <a href="#" class="yt-tab_links">
+        <div class="yt-tab-icos">
+          <div class="yt-tab-icos-sec">
+            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon">
+        
+        <path fill="hsl(0, 0%, 53.3%)" d="M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.1-1.65c.2-.15.25-.42.13-.64l-2-3.46c-.12-.22-.4-.3-.6-.22l-2.5 1c-.52-.4-1.08-.73-1.7-.98l-.37-2.65c-.06-.24-.27-.42-.5-.42h-4c-.27 0-.48.18-.5.42l-.4 2.65c-.6.25-1.17.6-1.7.98l-2.48-1c-.23-.1-.5 0-.6.22l-2 3.46c-.14.22-.08.5.1.64l2.12 1.65c-.04.32-.07.65-.07.98s.02.66.06.98l-2.1 1.65c-.2.15-.25.42-.13.64l2 3.46c.12.22.4.3.6.22l2.5-1c.52.4 1.08.73 1.7.98l.37 2.65c.04.24.25.42.5.42h4c.25 0 .46-.18.5-.42l.37-2.65c.6-.25 1.17-.6 1.7-.98l2.48 1c.23.1.5 0 .6-.22l2-3.46c.13-.22.08-.5-.1-.64l-2.12-1.65zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z" class="style-scope yt-icon"></path>
+      </g></svg>
+          </div>
+        </div>
+        <div class="yt-tab-names">
+          Settings
+        </div>
+      </a>
+      <a href="#" class="yt-tab_links">
+        <div class="yt-tab-icos">
+          <div class="yt-tab-icos-sec">
+            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon">
+        <path fill="hsl(0, 0%, 53.3%)" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z" class="style-scope yt-icon"></path>
+      </g></svg>
+
+          </div>
+        </div>
+        <div class="yt-tab-names">
+          Help
+        </div>
+      </a>
+      <a href="#" class="yt-tab_links">
+        <div class="yt-tab-icos">
+          <div class="yt-tab-icos-sec">
+            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon">
+        <path d="M0 0h24v24H0z" fill="none" class="style-scope yt-icon"></path>
+        <path fill="hsl(0, 0%, 53.3%)" d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 12h-2v-2h2v2zm0-4h-2V6h2v4z" class="style-scope yt-icon"></path>
+      </g></svg>
+
+          </div>
+        </div>
+        <div class="yt-tab-names">
+          Send feedback
+        </div>
+      </a>
+    </div>
+    <div class="m-line-break"></div>
+    <div class="yt-other-links">
+      <div class="yt-other-links-box_one">
+        <a href="#">About</a>
+        <a href="#">Press</a>
+        <a href="#">Copyright</a>
+        <a href="#">Creators</a>
+        <a href="#">Advertise</a>
+        <a href="#">Developers</a>
+        <a href="#">&#43;YouTube</a>
+      </div>
+      <div class="yt-other-links-box_anothr">
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+        <a href="#">Policy &amp; Safety</a>
+        <a href="#">Test new features</a>
+      </div>
+      <div class="copyright-notice">
+        &copy; 2017 YouTube, LLC
+      </div>
+    </div>
+  </div>
+  <article id="psDropdown" class="page-setting_dropdown-content scroll">
+    <a href="#home">Dark Theme: On<i class="right"></i></a>
+    <a href="#about">Language: English<i class="right"></i></a>
+    <a href="#contact">Content Locaction: India<i class="right"></i></a>
+    <a href="#home">Restricted Mode: On<i class="right"></i></a>
+    <a href="#about">Settings</a>
+    <a href="#contact">Help</a>
+    <a href="#home">Send feedback</a>
+    <a href="#about">Restore classic Youtube</a>
+  </article>
+
+  <script src="assets/js/aside-menu.js"></script>
+  <script src="assets/js/page-setting_menu.js"></script>
+  <section class="vd-section">
+    <article class="vd-section-box">
+      <div class="channel-info">
+        <div class="channel-name">
+          <img src="assets/i/logo/speed-records.jpg">
+          <h1>
+            Speed Records
+          </h1>
+        </div>
+        <div class="channel-subscribe--btn">
+          <div class="subs-link-container">
+            <a href="#">
+              SUBSCRIBE 3M
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="vd-section_container container_speed-records">
+      <button class="left-scroll-btn left-btn_speed-records">
+        <div class="scroll-btn_arrow-bg"></div>  
+        <i class="left"></i>
+      </button>
+      <button class="right-scroll-btn right-btn_speed-records">
+        <div class="scroll-btn_arrow-bg"></div>    
+        <i class="right"></i>
+      </button>
+        <ul class="vd-section_container-list">
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/raftaar.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Raftaar - Tere Wargi Nai Ae | AK Projekts | Adah Sharma
+                </span>
+                <span>
+                  Raftaar<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  4.7M views &#8226; 5 days ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/sardar-bandey.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Sardaar Bandey (Full Video) | Jordan Sandhu feat.Manni 
+                </span>
+                <span>
+                  Speed Records<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  1.6M views &#8226; 1 year ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/badnam.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  BADNAM (The Bad Boy) FULL VIDEO Mankirt Aulakh feat.Par
+                </span>
+                <span>
+                  Mankirt Aulakh<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  1.3M views &#8226; 1 week ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/car-nachdi.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Gippy Grewal Feat Bohemia: Car Nachdi Official Video | 
+                </span>
+                <span>
+                  T-Series<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  9.2M views &#8226; 1 weak ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/gangland.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Gangland (Full Song) | Mankirt Aulakh Feat Deep 
+                </span>
+                <span>
+                  Speed Records<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  19M views &#8226; 1 month ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/suno-sardar-ji.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  SUNO SARDAR JI by Mehtab Virk Ft. Oshin Brar | 
+                </span>
+                <span>
+                  T-Series Apna Punjab<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  12M views &#8226; 3 weeks ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/landers.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  The Landers - King Queen | Mr V Grooves | Latest  
+                </span>
+                <span>
+                  Sony Music India<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  5.7M views &#8226; 7 months ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/kolaveri.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  3 - Why This Kolaveri Di Official Video | Dhanush,  
+                </span>
+                <span>
+                  Sony Music India<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  123M views &#8226; 5 years ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/glourous-gallan.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Glorious Gallan | Super Singh | Diljit Dosanjh & Sonam
+                </span>
+                <span>
+                  Zee Music Company<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  3.2M views &#8226; 3 weeks ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/blush.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Deep Money: Blush (Full Song) | Enzo | Mintu Sohi |  
+                </span>
+                <span>
+                  T-Series Apna Punjab<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  7.6M views &#8226; 4 months ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/mein-tera.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Main Tera Boyfriend Lyrical Video | Raabta | Arijit Singh |  
+                </span>
+                <span>
+                  T-Series<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  17M views &#8226; 1 month ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/3-peg.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  "3 Peg Sharry Mann" (Full Video) | Mista Baaz | Parmish  
+                </span>
+                <span>
+                  T-Series Apna Punjab<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  107M views &#8226; 6 months ago
+                </span>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <script type="text/javascript">
+        $('button.left-btn_speed-records').click(function() {
+          var scrollLeftAmount = 570;
+          $('.container_speed-records').animate({
+            scrollLeft: '-=' + scrollLeftAmount
+          }, 200)
+        });
+
+        $('button.right-btn_speed-records').click(function() {
+
+
+          if ($(window).width() <= 500) {
+            var scrollLeftAmount = 300;
+          } else {
+            var scrollLeftAmount = 570;
+          }
+
+
+          $('.container_speed-records').animate({
+            scrollLeft: '+=' + scrollLeftAmount
+          }, 200);
+        });
+      </script>
+        <div class="m-line-break break-has-size">
+        
+        </div>
+    </article>
+    <article class="vd-section-box">
+      <div class="channel-info">
+        <div class="channel-name">
+          <img src="assets/i/logo/sony-music-india.jpg">
+          <h1>
+            Sony Music India
+          </h1>
+        </div>
+        <div class="channel-subscribe--btn">
+          <div class="subs-link-container">
+            <a href="#">
+              SUBSCRIBE 6.2M
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="vd-section_container container_sony-music-india">
+      <button class="left-scroll-btn left-btn_sony-music-india">
+        <div class="scroll-btn_arrow-bg"></div>  
+        <i class="left"></i>
+      </button>
+      <button class="right-scroll-btn right-btn_sony-music-india">
+        <div class="scroll-btn_arrow-bg"></div>    
+        <i class="right"></i>
+      </button>
+        <ul class="vd-section_container-list">
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/landers.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  The Landers - King Queen | Mr V Grooves | Latest  
+                </span>
+                <span>
+                  Sony Music India<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  5.7M views &#8226; 7 months ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/kolaveri.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  3 - Why This Kolaveri Di Official Video | Dhanush,  
+                </span>
+                <span>
+                  Sony Music India<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  123M views &#8226; 5 years ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/glourous-gallan.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Glorious Gallan | Super Singh | Diljit Dosanjh & Sonam
+                </span>
+                <span>
+                  Zee Music Company<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  3.2M views &#8226; 3 weeks ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/blush.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Deep Money: Blush (Full Song) | Enzo | Mintu Sohi |  
+                </span>
+                <span>
+                  T-Series Apna Punjab<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  7.6M views &#8226; 4 months ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/mein-tera.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Main Tera Boyfriend Lyrical Video | Raabta | Arijit Singh |  
+                </span>
+                <span>
+                  T-Series<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  17M views &#8226; 1 month ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/3-peg.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  "3 Peg Sharry Mann" (Full Video) | Mista Baaz | Parmish  
+                </span>
+                <span>
+                  T-Series Apna Punjab<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  107M views &#8226; 6 months ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/raftaar.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Raftaar - Tere Wargi Nai Ae | AK Projekts | Adah Sharma
+                </span>
+                <span>
+                  Raftaar<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  4.7M views &#8226; 5 days ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/sardar-bandey.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Sardaar Bandey (Full Video) | Jordan Sandhu feat.Manni 
+                </span>
+                <span>
+                  Speed Records<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  1.6M views &#8226; 1 year ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/badnam.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  BADNAM (The Bad Boy) FULL VIDEO Mankirt Aulakh feat.Par
+                </span>
+                <span>
+                  Mankirt Aulakh<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  1.3M views &#8226; 1 week ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/car-nachdi.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Gippy Grewal Feat Bohemia: Car Nachdi Official Video | 
+                </span>
+                <span>
+                  T-Series<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  9.2M views &#8226; 1 weak ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/gangland.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Gangland (Full Song) | Mankirt Aulakh Feat Deep 
+                </span>
+                <span>
+                  Speed Records<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  19M views &#8226; 1 month ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/suno-sardar-ji.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  SUNO SARDAR JI by Mehtab Virk Ft. Oshin Brar | 
+                </span>
+                <span>
+                  T-Series Apna Punjab<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  12M views &#8226; 3 weeks ago
+                </span>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <script type="text/javascript">
+        $('button.left-btn_sony-music-india').click(function() {
+          var scrollLeftAmount = 570;
+          $('.container_sony-music-india').animate({
+            scrollLeft: '-=' + scrollLeftAmount
+          }, 200)
+        });
+
+        $('button.right-btn_sony-music-india').click(function() {
+
+
+          if ($(window).width() <= 500) {
+            var scrollLeftAmount = 300;
+          } else {
+            var scrollLeftAmount = 570;
+          }
+
+
+          $('.container_sony-music-india').animate({
+            scrollLeft: '+=' + scrollLeftAmount
+          }, 200);
+        });
+      </script>
+        <div class="m-line-break break-has-size">
+        
+        </div>
+    </article>
+    <article class="vd-section-box">
+      <div class="channel-info">
+        <div class="channel-name">
+          <img src="assets/i/logo/zee-music-company.jpg">
+          <h1>
+            Zee Music Company
+          </h1>
+        </div>
+        <div class="channel-subscribe--btn">
+          <div class="subs-link-container">
+            <a href="#">
+              SUBSCRIBE 7.1M
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="vd-section_container container_zee-music-company">
+      <button class="left-scroll-btn left-btn_zee-music-company">
+        <div class="scroll-btn_arrow-bg"></div>  
+        <i class="left"></i>
+      </button>
+      <button class="right-scroll-btn right-btn_zee-music-company">
+        <div class="scroll-btn_arrow-bg"></div>    
+        <i class="right"></i>
+      </button>
+        <ul class="vd-section_container-list">
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/raftaar.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Raftaar - Tere Wargi Nai Ae | AK Projekts | Adah Sharma
+                </span>
+                <span>
+                  Raftaar<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  4.7M views &#8226; 5 days ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/sardar-bandey.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Sardaar Bandey (Full Video) | Jordan Sandhu feat.Manni 
+                </span>
+                <span>
+                  Speed Records<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  1.6M views &#8226; 1 year ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/badnam.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  BADNAM (The Bad Boy) FULL VIDEO Mankirt Aulakh feat.Par
+                </span>
+                <span>
+                  Mankirt Aulakh<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  1.3M views &#8226; 1 week ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/car-nachdi.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Gippy Grewal Feat Bohemia: Car Nachdi Official Video | 
+                </span>
+                <span>
+                  T-Series<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  9.2M views &#8226; 1 weak ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/gangland.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Gangland (Full Song) | Mankirt Aulakh Feat Deep 
+                </span>
+                <span>
+                  Speed Records<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  19M views &#8226; 1 month ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/suno-sardar-ji.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  SUNO SARDAR JI by Mehtab Virk Ft. Oshin Brar | 
+                </span>
+                <span>
+                  T-Series Apna Punjab<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  12M views &#8226; 3 weeks ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/landers.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  The Landers - King Queen | Mr V Grooves | Latest  
+                </span>
+                <span>
+                  Sony Music India<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  5.7M views &#8226; 7 months ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/kolaveri.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  3 - Why This Kolaveri Di Official Video | Dhanush,  
+                </span>
+                <span>
+                  Sony Music India<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  123M views &#8226; 5 years ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/glourous-gallan.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Glorious Gallan | Super Singh | Diljit Dosanjh & Sonam
+                </span>
+                <span>
+                  Zee Music Company<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  3.2M views &#8226; 3 weeks ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/blush.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Deep Money: Blush (Full Song) | Enzo | Mintu Sohi |  
+                </span>
+                <span>
+                  T-Series Apna Punjab<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  7.6M views &#8226; 4 months ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/mein-tera.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Main Tera Boyfriend Lyrical Video | Raabta | Arijit Singh |  
+                </span>
+                <span>
+                  T-Series<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  17M views &#8226; 1 month ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/3-peg.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  "3 Peg Sharry Mann" (Full Video) | Mista Baaz | Parmish  
+                </span>
+                <span>
+                  T-Series Apna Punjab<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  107M views &#8226; 6 months ago
+                </span>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <script type="text/javascript">
+        $('button.left-btn_zee-music-company').click(function() {
+          var scrollLeftAmount = 570;
+          $('.container_zee-music-company').animate({
+            scrollLeft: '-=' + scrollLeftAmount
+          }, 200)
+        });
+
+        $('button.right-btn_zee-music-company').click(function() {
+
+
+          if ($(window).width() <= 500) {
+            var scrollLeftAmount = 300;
+          } else {
+            var scrollLeftAmount = 570;
+          }
+
+
+          $('.container_zee-music-company').animate({
+            scrollLeft: '+=' + scrollLeftAmount
+          }, 200);
+        });
+      </script>
+        <div class="m-line-break break-has-size">
+        
+        </div>
+    </article>
+    <article class="vd-section-box">
+      <div class="channel-info">
+        <div class="channel-name">
+          <img src="assets/i/logo/yrf.jpg">
+          <h1>
+            YRF
+          </h1>
+        </div>
+        <div class="channel-subscribe--btn">
+          <div class="subs-link-container">
+            <a href="#">
+              SUBSCRIBE 5.2M
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="vd-section_container container_yrf">
+      <button class="left-scroll-btn left-btn_yrf">
+        <div class="scroll-btn_arrow-bg"></div>  
+        <i class="left"></i>
+      </button>
+      <button class="right-scroll-btn right-btn_yrf">
+        <div class="scroll-btn_arrow-bg"></div>    
+        <i class="right"></i>
+      </button>
+        <ul class="vd-section_container-list">
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/raftaar.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Raftaar - Tere Wargi Nai Ae | AK Projekts | Adah Sharma
+                </span>
+                <span>
+                  Raftaar<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  4.7M views &#8226; 5 days ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/sardar-bandey.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Sardaar Bandey (Full Video) | Jordan Sandhu feat.Manni 
+                </span>
+                <span>
+                  Speed Records<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  1.6M views &#8226; 1 year ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/badnam.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  BADNAM (The Bad Boy) FULL VIDEO Mankirt Aulakh feat.Par
+                </span>
+                <span>
+                  Mankirt Aulakh<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  1.3M views &#8226; 1 week ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/car-nachdi.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Gippy Grewal Feat Bohemia: Car Nachdi Official Video | 
+                </span>
+                <span>
+                  T-Series<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  9.2M views &#8226; 1 weak ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/gangland.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Gangland (Full Song) | Mankirt Aulakh Feat Deep 
+                </span>
+                <span>
+                  Speed Records<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  19M views &#8226; 1 month ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/suno-sardar-ji.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  SUNO SARDAR JI by Mehtab Virk Ft. Oshin Brar | 
+                </span>
+                <span>
+                  T-Series Apna Punjab<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  12M views &#8226; 3 weeks ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/landers.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  The Landers - King Queen | Mr V Grooves | Latest  
+                </span>
+                <span>
+                  Sony Music India<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  5.7M views &#8226; 7 months ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/kolaveri.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  3 - Why This Kolaveri Di Official Video | Dhanush,  
+                </span>
+                <span>
+                  Sony Music India<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  123M views &#8226; 5 years ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/glourous-gallan.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Glorious Gallan | Super Singh | Diljit Dosanjh & Sonam
+                </span>
+                <span>
+                  Zee Music Company<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  3.2M views &#8226; 3 weeks ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/blush.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Deep Money: Blush (Full Song) | Enzo | Mintu Sohi |  
+                </span>
+                <span>
+                  T-Series Apna Punjab<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  7.6M views &#8226; 4 months ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/mein-tera.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Main Tera Boyfriend Lyrical Video | Raabta | Arijit Singh |  
+                </span>
+                <span>
+                  T-Series<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  17M views &#8226; 1 month ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/3-peg.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  "3 Peg Sharry Mann" (Full Video) | Mista Baaz | Parmish  
+                </span>
+                <span>
+                  T-Series Apna Punjab<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  107M views &#8226; 6 months ago
+                </span>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <script type="text/javascript">
+        $('button.left-btn_yrf').click(function() {
+          var scrollLeftAmount = 570;
+          $('.container_yrf').animate({
+            scrollLeft: '-=' + scrollLeftAmount
+          }, 200)
+        });
+
+        $('button.right-btn_yrf').click(function() {
+
+
+          if ($(window).width() <= 500) {
+            var scrollLeftAmount = 300;
+          } else {
+            var scrollLeftAmount = 570;
+          }
+
+
+          $('.container_yrf').animate({
+            scrollLeft: '+=' + scrollLeftAmount
+          }, 200);
+        });
+      </script>
+        <div class="m-line-break break-has-size">
+        
+        </div>
+    </article>
+    <article class="vd-section-box">
+      <div class="channel-info">
+        <div class="channel-name">
+          <img src="assets/i/logo/t-series-apna-punjab.jpg">
+          <h1>
+            T-Series Apna Punjab
+          </h1>
+        </div>
+        <div class="channel-subscribe--btn">
+          <div class="subs-link-container">
+            <a href="#">
+              SUBSCRIBE 3.2M
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="vd-section_container container_t-series-apna-punjab">
+      <button class="left-scroll-btn left-btn_t-series-apna-punjab">
+        <div class="scroll-btn_arrow-bg"></div>  
+        <i class="left"></i>
+      </button>
+      <button class="right-scroll-btn right-btn_t-series-apna-punjab">
+        <div class="scroll-btn_arrow-bg"></div>    
+        <i class="right"></i>
+      </button>
+        <ul class="vd-section_container-list">
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/raftaar.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Raftaar - Tere Wargi Nai Ae | AK Projekts | Adah Sharma
+                </span>
+                <span>
+                  Raftaar<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  4.7M views &#8226; 5 days ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/sardar-bandey.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Sardaar Bandey (Full Video) | Jordan Sandhu feat.Manni 
+                </span>
+                <span>
+                  Speed Records<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  1.6M views &#8226; 1 year ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/badnam.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  BADNAM (The Bad Boy) FULL VIDEO Mankirt Aulakh feat.Par
+                </span>
+                <span>
+                  Mankirt Aulakh<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  1.3M views &#8226; 1 week ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/car-nachdi.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Gippy Grewal Feat Bohemia: Car Nachdi Official Video | 
+                </span>
+                <span>
+                  T-Series<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  9.2M views &#8226; 1 weak ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/gangland.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Gangland (Full Song) | Mankirt Aulakh Feat Deep 
+                </span>
+                <span>
+                  Speed Records<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  19M views &#8226; 1 month ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/suno-sardar-ji.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  SUNO SARDAR JI by Mehtab Virk Ft. Oshin Brar | 
+                </span>
+                <span>
+                  T-Series Apna Punjab<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  12M views &#8226; 3 weeks ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/landers.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  The Landers - King Queen | Mr V Grooves | Latest  
+                </span>
+                <span>
+                  Sony Music India<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  5.7M views &#8226; 7 months ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/kolaveri.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  3 - Why This Kolaveri Di Official Video | Dhanush,  
+                </span>
+                <span>
+                  Sony Music India<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  123M views &#8226; 5 years ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/glourous-gallan.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Glorious Gallan | Super Singh | Diljit Dosanjh & Sonam
+                </span>
+                <span>
+                  Zee Music Company<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  3.2M views &#8226; 3 weeks ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/blush.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Deep Money: Blush (Full Song) | Enzo | Mintu Sohi |  
+                </span>
+                <span>
+                  T-Series Apna Punjab<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  7.6M views &#8226; 4 months ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/mein-tera.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Main Tera Boyfriend Lyrical Video | Raabta | Arijit Singh |  
+                </span>
+                <span>
+                  T-Series<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  17M views &#8226; 1 month ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/3-peg.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  "3 Peg Sharry Mann" (Full Video) | Mista Baaz | Parmish  
+                </span>
+                <span>
+                  T-Series Apna Punjab<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  107M views &#8226; 6 months ago
+                </span>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <script type="text/javascript">
+        $('button.left-btn_t-series-apna-punjab').click(function() {
+          var scrollLeftAmount = 570;
+          $('.container_t-series-apna-punjab').animate({
+            scrollLeft: '-=' + scrollLeftAmount
+          }, 200)
+        });
+
+        $('button.right-btn_t-series-apna-punjab').click(function() {
+
+
+          if ($(window).width() <= 500) {
+            var scrollLeftAmount = 300;
+          } else {
+            var scrollLeftAmount = 570;
+          }
+
+
+          $('.container_t-series-apna-punjab').animate({
+            scrollLeft: '+=' + scrollLeftAmount
+          }, 200);
+        });
+      </script>
+        <div class="m-line-break break-has-size">
+        
+        </div>
+    </article>
+    <article class="vd-section-box">
+      <div class="channel-info">
+        <div class="channel-name">
+          <img src="assets/i/logo/sony-music-india-vevo.jpg">
+          <h1>
+            SonyMusicIndiaVEVO
+          </h1>
+        </div>
+        <div class="channel-subscribe--btn">
+          <div class="subs-link-container">
+            <a href="#">
+              SUBSCRIBE 3.2M
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="vd-section_container container_sony-music-india-vevo">
+      <button class="left-scroll-btn left-btn_sony-music-india-vevo">
+        <div class="scroll-btn_arrow-bg"></div>  
+        <i class="left"></i>
+      </button>
+      <button class="right-scroll-btn right-btn_sony-music-india-vevo">
+        <div class="scroll-btn_arrow-bg"></div>    
+        <i class="right"></i>
+      </button>
+        <ul class="vd-section_container-list">
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/raftaar.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Raftaar - Tere Wargi Nai Ae | AK Projekts | Adah Sharma
+                </span>
+                <span>
+                  Raftaar<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  4.7M views &#8226; 5 days ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/sardar-bandey.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Sardaar Bandey (Full Video) | Jordan Sandhu feat.Manni 
+                </span>
+                <span>
+                  Speed Records<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  1.6M views &#8226; 1 year ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/badnam.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  BADNAM (The Bad Boy) FULL VIDEO Mankirt Aulakh feat.Par
+                </span>
+                <span>
+                  Mankirt Aulakh<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  1.3M views &#8226; 1 week ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/car-nachdi.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Gippy Grewal Feat Bohemia: Car Nachdi Official Video | 
+                </span>
+                <span>
+                  T-Series<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  9.2M views &#8226; 1 weak ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/gangland.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Gangland (Full Song) | Mankirt Aulakh Feat Deep 
+                </span>
+                <span>
+                  Speed Records<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  19M views &#8226; 1 month ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/suno-sardar-ji.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  SUNO SARDAR JI by Mehtab Virk Ft. Oshin Brar | 
+                </span>
+                <span>
+                  T-Series Apna Punjab<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  12M views &#8226; 3 weeks ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/landers.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  The Landers - King Queen | Mr V Grooves | Latest  
+                </span>
+                <span>
+                  Sony Music India<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  5.7M views &#8226; 7 months ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/kolaveri.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  3 - Why This Kolaveri Di Official Video | Dhanush,  
+                </span>
+                <span>
+                  Sony Music India<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  123M views &#8226; 5 years ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/glourous-gallan.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Glorious Gallan | Super Singh | Diljit Dosanjh & Sonam
+                </span>
+                <span>
+                  Zee Music Company<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  3.2M views &#8226; 3 weeks ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/blush.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Deep Money: Blush (Full Song) | Enzo | Mintu Sohi |  
+                </span>
+                <span>
+                  T-Series Apna Punjab<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  7.6M views &#8226; 4 months ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/mein-tera.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Main Tera Boyfriend Lyrical Video | Raabta | Arijit Singh |  
+                </span>
+                <span>
+                  T-Series<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  17M views &#8226; 1 month ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/3-peg.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  "3 Peg Sharry Mann" (Full Video) | Mista Baaz | Parmish  
+                </span>
+                <span>
+                  T-Series Apna Punjab<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  107M views &#8226; 6 months ago
+                </span>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <script type="text/javascript">
+        $('button.left-btn_sony-music-india-vevo').click(function() {
+          var scrollLeftAmount = 570;
+          $('.container_sony-music-india-vevo').animate({
+            scrollLeft: '-=' + scrollLeftAmount
+          }, 200)
+        });
+
+        $('button.right-btn_sony-music-india-vevo').click(function() {
+
+
+          if ($(window).width() <= 500) {
+            var scrollLeftAmount = 300;
+          } else {
+            var scrollLeftAmount = 570;
+          }
+
+
+          $('.container_sony-music-india-vevo').animate({
+            scrollLeft: '+=' + scrollLeftAmount
+          }, 200);
+        });
+      </script>
+        <div class="m-line-break break-has-size">
+        
+        </div>
+    </article>
+    <article class="vd-section-box">
+      <div class="channel-info">
+        <div class="channel-name">
+          <img src="assets/i/logo/lokdhun-punjabi.jpg">
+          <h1>
+            Lokdhun Punjabi
+          </h1>
+        </div>
+        <div class="channel-subscribe--btn">
+          <div class="subs-link-container">
+            <a href="#">
+              SUBSCRIBE 1.1M
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="vd-section_container container_lokdhun-punjabi">
+      <button class="left-scroll-btn left-btn_lokdhun-punjabi">
+        <div class="scroll-btn_arrow-bg"></div>  
+        <i class="left"></i>
+      </button>
+      <button class="right-scroll-btn right-btn_lokdhun-punjabi">
+        <div class="scroll-btn_arrow-bg"></div>    
+        <i class="right"></i>
+      </button>
+        <ul class="vd-section_container-list">
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/raftaar.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Raftaar - Tere Wargi Nai Ae | AK Projekts | Adah Sharma
+                </span>
+                <span>
+                  Raftaar<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  4.7M views &#8226; 5 days ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/sardar-bandey.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Sardaar Bandey (Full Video) | Jordan Sandhu feat.Manni 
+                </span>
+                <span>
+                  Speed Records<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  1.6M views &#8226; 1 year ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/badnam.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  BADNAM (The Bad Boy) FULL VIDEO Mankirt Aulakh feat.Par
+                </span>
+                <span>
+                  Mankirt Aulakh<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  1.3M views &#8226; 1 week ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/car-nachdi.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Gippy Grewal Feat Bohemia: Car Nachdi Official Video | 
+                </span>
+                <span>
+                  T-Series<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  9.2M views &#8226; 1 weak ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/gangland.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Gangland (Full Song) | Mankirt Aulakh Feat Deep 
+                </span>
+                <span>
+                  Speed Records<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  19M views &#8226; 1 month ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/suno-sardar-ji.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  SUNO SARDAR JI by Mehtab Virk Ft. Oshin Brar | 
+                </span>
+                <span>
+                  T-Series Apna Punjab<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  12M views &#8226; 3 weeks ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/landers.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  The Landers - King Queen | Mr V Grooves | Latest  
+                </span>
+                <span>
+                  Sony Music India<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  5.7M views &#8226; 7 months ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/kolaveri.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  3 - Why This Kolaveri Di Official Video | Dhanush,  
+                </span>
+                <span>
+                  Sony Music India<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  123M views &#8226; 5 years ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/glourous-gallan.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Glorious Gallan | Super Singh | Diljit Dosanjh & Sonam
+                </span>
+                <span>
+                  Zee Music Company<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  3.2M views &#8226; 3 weeks ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/blush.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Deep Money: Blush (Full Song) | Enzo | Mintu Sohi |  
+                </span>
+                <span>
+                  T-Series Apna Punjab<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  7.6M views &#8226; 4 months ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/mein-tera.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Main Tera Boyfriend Lyrical Video | Raabta | Arijit Singh |  
+                </span>
+                <span>
+                  T-Series<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  17M views &#8226; 1 month ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/3-peg.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  "3 Peg Sharry Mann" (Full Video) | Mista Baaz | Parmish  
+                </span>
+                <span>
+                  T-Series Apna Punjab<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  107M views &#8226; 6 months ago
+                </span>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <script type="text/javascript">
+        $('button.left-btn_lokdhun-punjabi').click(function() {
+          var scrollLeftAmount = 570;
+          $('.container_lokdhun-punjabi').animate({
+            scrollLeft: '-=' + scrollLeftAmount
+          }, 200)
+        });
+
+        $('button.right-btn_lokdhun-punjabi').click(function() {
+
+
+          if ($(window).width() <= 500) {
+            var scrollLeftAmount = 300;
+          } else {
+            var scrollLeftAmount = 570;
+          }
+
+
+          $('.container_lokdhun-punjabi').animate({
+            scrollLeft: '+=' + scrollLeftAmount
+          }, 200);
+        });
+      </script>
+        <div class="m-line-break break-has-size">
+        
+        </div>
+    </article>
+    <article class="vd-section-box">
+      <div class="channel-info">
+        <div class="channel-name">
+          <img src="assets/i/logo/punj-aab-records.jpg">
+          <h1>
+            Punj-aab Records
+          </h1>
+        </div>
+        <div class="channel-subscribe--btn">
+          <div class="subs-link-container">
+            <a href="#">
+              SUBSCRIBE 545K
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="vd-section_container container_punj-aab-records">
+      <button class="left-scroll-btn left-btn_punj-aab-records">
+        <div class="scroll-btn_arrow-bg"></div>  
+        <i class="left"></i>
+      </button>
+      <button class="right-scroll-btn right-btn_punj-aab-records">
+        <div class="scroll-btn_arrow-bg"></div>    
+        <i class="right"></i>
+      </button>
+        <ul class="vd-section_container-list">
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/raftaar.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Raftaar - Tere Wargi Nai Ae | AK Projekts | Adah Sharma
+                </span>
+                <span>
+                  Raftaar<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  4.7M views &#8226; 5 days ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/sardar-bandey.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Sardaar Bandey (Full Video) | Jordan Sandhu feat.Manni 
+                </span>
+                <span>
+                  Speed Records<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  1.6M views &#8226; 1 year ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/badnam.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  BADNAM (The Bad Boy) FULL VIDEO Mankirt Aulakh feat.Par
+                </span>
+                <span>
+                  Mankirt Aulakh<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  1.3M views &#8226; 1 week ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/car-nachdi.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Gippy Grewal Feat Bohemia: Car Nachdi Official Video | 
+                </span>
+                <span>
+                  T-Series<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  9.2M views &#8226; 1 weak ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/gangland.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Gangland (Full Song) | Mankirt Aulakh Feat Deep 
+                </span>
+                <span>
+                  Speed Records<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  19M views &#8226; 1 month ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/suno-sardar-ji.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  SUNO SARDAR JI by Mehtab Virk Ft. Oshin Brar | 
+                </span>
+                <span>
+                  T-Series Apna Punjab<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  12M views &#8226; 3 weeks ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/landers.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  The Landers - King Queen | Mr V Grooves | Latest  
+                </span>
+                <span>
+                  Sony Music India<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  5.7M views &#8226; 7 months ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/kolaveri.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  3 - Why This Kolaveri Di Official Video | Dhanush,  
+                </span>
+                <span>
+                  Sony Music India<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  123M views &#8226; 5 years ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/glourous-gallan.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Glorious Gallan | Super Singh | Diljit Dosanjh & Sonam
+                </span>
+                <span>
+                  Zee Music Company<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  3.2M views &#8226; 3 weeks ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/blush.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Deep Money: Blush (Full Song) | Enzo | Mintu Sohi |  
+                </span>
+                <span>
+                  T-Series Apna Punjab<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  7.6M views &#8226; 4 months ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/mein-tera.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Main Tera Boyfriend Lyrical Video | Raabta | Arijit Singh |  
+                </span>
+                <span>
+                  T-Series<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  17M views &#8226; 1 month ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/3-peg.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  "3 Peg Sharry Mann" (Full Video) | Mista Baaz | Parmish  
+                </span>
+                <span>
+                  T-Series Apna Punjab<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  107M views &#8226; 6 months ago
+                </span>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <script type="text/javascript">
+        $('button.left-btn_punj-aab-records').click(function() {
+          var scrollLeftAmount = 570;
+          $('.container_punj-aab-records').animate({
+            scrollLeft: '-=' + scrollLeftAmount
+          }, 200)
+        });
+
+        $('button.right-btn_punj-aab-records').click(function() {
+
+
+          if ($(window).width() <= 500) {
+            var scrollLeftAmount = 300;
+          } else {
+            var scrollLeftAmount = 570;
+          }
+
+
+          $('.container_punj-aab-records').animate({
+            scrollLeft: '+=' + scrollLeftAmount
+          }, 200);
+        });
+      </script>
+        <div class="m-line-break break-has-size">
+        
+        </div>
+    </article>
+    <article class="vd-section-box">
+      <div class="channel-info">
+        <div class="channel-name">
+          <img src="assets/i/logo/fresh-media-records.jpg">
+          <h1>
+            Fresh Media Records
+          </h1>
+        </div>
+        <div class="channel-subscribe--btn">
+          <div class="subs-link-container">
+            <a href="#">
+              SUBSCRIBE 322K
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="vd-section_container container_fresh-media-records">
+      <button class="left-scroll-btn left-btn_fresh-media-records">
+        <div class="scroll-btn_arrow-bg"></div>  
+        <i class="left"></i>
+      </button>
+      <button class="right-scroll-btn right-btn_fresh-media-records">
+        <div class="scroll-btn_arrow-bg"></div>    
+        <i class="right"></i>
+      </button>
+        <ul class="vd-section_container-list">
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/raftaar.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Raftaar - Tere Wargi Nai Ae | AK Projekts | Adah Sharma
+                </span>
+                <span>
+                  Raftaar<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  4.7M views &#8226; 5 days ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/sardar-bandey.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Sardaar Bandey (Full Video) | Jordan Sandhu feat.Manni 
+                </span>
+                <span>
+                  Speed Records<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  1.6M views &#8226; 1 year ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/badnam.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  BADNAM (The Bad Boy) FULL VIDEO Mankirt Aulakh feat.Par
+                </span>
+                <span>
+                  Mankirt Aulakh<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  1.3M views &#8226; 1 week ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/car-nachdi.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Gippy Grewal Feat Bohemia: Car Nachdi Official Video | 
+                </span>
+                <span>
+                  T-Series<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  9.2M views &#8226; 1 weak ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/gangland.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Gangland (Full Song) | Mankirt Aulakh Feat Deep 
+                </span>
+                <span>
+                  Speed Records<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  19M views &#8226; 1 month ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/suno-sardar-ji.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  SUNO SARDAR JI by Mehtab Virk Ft. Oshin Brar | 
+                </span>
+                <span>
+                  T-Series Apna Punjab<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  12M views &#8226; 3 weeks ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/landers.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  The Landers - King Queen | Mr V Grooves | Latest  
+                </span>
+                <span>
+                  Sony Music India<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  5.7M views &#8226; 7 months ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/kolaveri.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  3 - Why This Kolaveri Di Official Video | Dhanush,  
+                </span>
+                <span>
+                  Sony Music India<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  123M views &#8226; 5 years ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/glourous-gallan.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Glorious Gallan | Super Singh | Diljit Dosanjh & Sonam
+                </span>
+                <span>
+                  Zee Music Company<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  3.2M views &#8226; 3 weeks ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/blush.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Deep Money: Blush (Full Song) | Enzo | Mintu Sohi |  
+                </span>
+                <span>
+                  T-Series Apna Punjab<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  7.6M views &#8226; 4 months ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/mein-tera.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Main Tera Boyfriend Lyrical Video | Raabta | Arijit Singh |  
+                </span>
+                <span>
+                  T-Series<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  17M views &#8226; 1 month ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/3-peg.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  "3 Peg Sharry Mann" (Full Video) | Mista Baaz | Parmish  
+                </span>
+                <span>
+                  T-Series Apna Punjab<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  107M views &#8226; 6 months ago
+                </span>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <script type="text/javascript">
+        $('button.left-btn_fresh-media-records').click(function() {
+          var scrollLeftAmount = 570;
+          $('.container_fresh-media-records').animate({
+            scrollLeft: '-=' + scrollLeftAmount
+          }, 200)
+        });
+
+        $('button.right-btn_fresh-media-records').click(function() {
+
+
+          if ($(window).width() <= 500) {
+            var scrollLeftAmount = 300;
+          } else {
+            var scrollLeftAmount = 570;
+          }
+
+
+          $('.container_fresh-media-records').animate({
+            scrollLeft: '+=' + scrollLeftAmount
+          }, 200);
+        });
+      </script>
+        <div class="m-line-break break-has-size">
+        
+        </div>
+    </article>
+    <article class="vd-section-box">
+      <div class="channel-info">
+        <div class="channel-name">
+          <img src="assets/i/logo/ed-sheeran.jpg">
+          <h1>
+            Ed Sheeran
+          </h1>
+        </div>
+        <div class="channel-subscribe--btn">
+          <div class="subs-link-container">
+            <a href="#">
+              SUBSCRIBE 18M
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="vd-section_container container_ed-sheeran">
+      <button class="left-scroll-btn left-btn_ed-sheeran">
+        <div class="scroll-btn_arrow-bg"></div>  
+        <i class="left"></i>
+      </button>
+      <button class="right-scroll-btn right-btn_ed-sheeran">
+        <div class="scroll-btn_arrow-bg"></div>    
+        <i class="right"></i>
+      </button>
+        <ul class="vd-section_container-list">
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/raftaar.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Raftaar - Tere Wargi Nai Ae | AK Projekts | Adah Sharma
+                </span>
+                <span>
+                  Raftaar<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  4.7M views &#8226; 5 days ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/sardar-bandey.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Sardaar Bandey (Full Video) | Jordan Sandhu feat.Manni 
+                </span>
+                <span>
+                  Speed Records<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  1.6M views &#8226; 1 year ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/badnam.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  BADNAM (The Bad Boy) FULL VIDEO Mankirt Aulakh feat.Par
+                </span>
+                <span>
+                  Mankirt Aulakh<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  1.3M views &#8226; 1 week ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/car-nachdi.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Gippy Grewal Feat Bohemia: Car Nachdi Official Video | 
+                </span>
+                <span>
+                  T-Series<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  9.2M views &#8226; 1 weak ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/gangland.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Gangland (Full Song) | Mankirt Aulakh Feat Deep 
+                </span>
+                <span>
+                  Speed Records<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  19M views &#8226; 1 month ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/suno-sardar-ji.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  SUNO SARDAR JI by Mehtab Virk Ft. Oshin Brar | 
+                </span>
+                <span>
+                  T-Series Apna Punjab<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  12M views &#8226; 3 weeks ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/landers.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  The Landers - King Queen | Mr V Grooves | Latest  
+                </span>
+                <span>
+                  Sony Music India<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  5.7M views &#8226; 7 months ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/kolaveri.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  3 - Why This Kolaveri Di Official Video | Dhanush,  
+                </span>
+                <span>
+                  Sony Music India<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  123M views &#8226; 5 years ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/glourous-gallan.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Glorious Gallan | Super Singh | Diljit Dosanjh & Sonam
+                </span>
+                <span>
+                  Zee Music Company<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  3.2M views &#8226; 3 weeks ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/blush.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Deep Money: Blush (Full Song) | Enzo | Mintu Sohi |  
+                </span>
+                <span>
+                  T-Series Apna Punjab<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  7.6M views &#8226; 4 months ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/mein-tera.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Main Tera Boyfriend Lyrical Video | Raabta | Arijit Singh |  
+                </span>
+                <span>
+                  T-Series<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  17M views &#8226; 1 month ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/3-peg.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  "3 Peg Sharry Mann" (Full Video) | Mista Baaz | Parmish  
+                </span>
+                <span>
+                  T-Series Apna Punjab<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  107M views &#8226; 6 months ago
+                </span>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <script type="text/javascript">
+        $('button.left-btn_ed-sheeran').click(function() {
+          var scrollLeftAmount = 570;
+          $('.container_ed-sheeran').animate({
+            scrollLeft: '-=' + scrollLeftAmount
+          }, 200)
+        });
+
+        $('button.right-btn_ed-sheeran').click(function() {
+
+
+          if ($(window).width() <= 500) {
+            var scrollLeftAmount = 300;
+          } else {
+            var scrollLeftAmount = 570;
+          }
+
+
+          $('.container_ed-sheeran').animate({
+            scrollLeft: '+=' + scrollLeftAmount
+          }, 200);
+        });
+      </script>
+        <div class="m-line-break break-has-size">
+        
+        </div>
+    </article>
+    <article class="vd-section-box">
+      <div class="channel-info">
+        <div class="channel-name">
+          <img src="assets/i/logo/t-series.jpg">
+          <h1>
+            T-Series
+          </h1>
+        </div>
+        <div class="channel-subscribe--btn">
+          <div class="subs-link-container">
+            <a href="#">
+              SUBSCRIBE 20M
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="vd-section_container container_t-series">
+      <button class="left-scroll-btn left-btn_t-series">
+        <div class="scroll-btn_arrow-bg"></div>  
+        <i class="left"></i>
+      </button>
+      <button class="right-scroll-btn right-btn_t-series">
+        <div class="scroll-btn_arrow-bg"></div>    
+        <i class="right"></i>
+      </button>
+        <ul class="vd-section_container-list">
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/raftaar.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Raftaar - Tere Wargi Nai Ae | AK Projekts | Adah Sharma
+                </span>
+                <span>
+                  Raftaar<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  4.7M views &#8226; 5 days ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/sardar-bandey.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Sardaar Bandey (Full Video) | Jordan Sandhu feat.Manni 
+                </span>
+                <span>
+                  Speed Records<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  1.6M views &#8226; 1 year ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/badnam.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  BADNAM (The Bad Boy) FULL VIDEO Mankirt Aulakh feat.Par
+                </span>
+                <span>
+                  Mankirt Aulakh<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  1.3M views &#8226; 1 week ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/car-nachdi.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Gippy Grewal Feat Bohemia: Car Nachdi Official Video | 
+                </span>
+                <span>
+                  T-Series<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  9.2M views &#8226; 1 weak ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/gangland.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Gangland (Full Song) | Mankirt Aulakh Feat Deep 
+                </span>
+                <span>
+                  Speed Records<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  19M views &#8226; 1 month ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/suno-sardar-ji.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  SUNO SARDAR JI by Mehtab Virk Ft. Oshin Brar | 
+                </span>
+                <span>
+                  T-Series Apna Punjab<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  12M views &#8226; 3 weeks ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/landers.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  The Landers - King Queen | Mr V Grooves | Latest  
+                </span>
+                <span>
+                  Sony Music India<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  5.7M views &#8226; 7 months ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/kolaveri.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  3 - Why This Kolaveri Di Official Video | Dhanush,  
+                </span>
+                <span>
+                  Sony Music India<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  123M views &#8226; 5 years ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/glourous-gallan.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Glorious Gallan | Super Singh | Diljit Dosanjh & Sonam
+                </span>
+                <span>
+                  Zee Music Company<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  3.2M views &#8226; 3 weeks ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/blush.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Deep Money: Blush (Full Song) | Enzo | Mintu Sohi |  
+                </span>
+                <span>
+                  T-Series Apna Punjab<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  7.6M views &#8226; 4 months ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/mein-tera.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Main Tera Boyfriend Lyrical Video | Raabta | Arijit Singh |  
+                </span>
+                <span>
+                  T-Series<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  17M views &#8226; 1 month ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/3-peg.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  "3 Peg Sharry Mann" (Full Video) | Mista Baaz | Parmish  
+                </span>
+                <span>
+                  T-Series Apna Punjab<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  107M views &#8226; 6 months ago
+                </span>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <script type="text/javascript">
+        $('button.left-btn_t-series').click(function() {
+          var scrollLeftAmount = 570;
+          $('.container_t-series').animate({
+            scrollLeft: '-=' + scrollLeftAmount
+          }, 200)
+        });
+
+        $('button.right-btn_t-series').click(function() {
+
+
+          if ($(window).width() <= 500) {
+            var scrollLeftAmount = 300;
+          } else {
+            var scrollLeftAmount = 570;
+          }
+
+
+          $('.container_t-series').animate({
+            scrollLeft: '+=' + scrollLeftAmount
+          }, 200);
+        });
+      </script>
+        <div class="m-line-break break-has-size">
+        
+        </div>
+    </article>
+    <article class="vd-section-box">
+      <div class="channel-info">
+        <div class="channel-name">
+          <img src="assets/i/logo/white-hill-music.jpg">
+          <h1>
+            White Hill Music
+          </h1>
+        </div>
+        <div class="channel-subscribe--btn">
+          <div class="subs-link-container">
+            <a href="#">
+              SUBSCRIBE 723K
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="vd-section_container container_white-hill-music">
+      <button class="left-scroll-btn left-btn_white-hill-music">
+        <div class="scroll-btn_arrow-bg"></div>  
+        <i class="left"></i>
+      </button>
+      <button class="right-scroll-btn right-btn_white-hill-music">
+        <div class="scroll-btn_arrow-bg"></div>    
+        <i class="right"></i>
+      </button>
+        <ul class="vd-section_container-list">
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/raftaar.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Raftaar - Tere Wargi Nai Ae | AK Projekts | Adah Sharma
+                </span>
+                <span>
+                  Raftaar<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  4.7M views &#8226; 5 days ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/sardar-bandey.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Sardaar Bandey (Full Video) | Jordan Sandhu feat.Manni 
+                </span>
+                <span>
+                  Speed Records<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  1.6M views &#8226; 1 year ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/badnam.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  BADNAM (The Bad Boy) FULL VIDEO Mankirt Aulakh feat.Par
+                </span>
+                <span>
+                  Mankirt Aulakh<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  1.3M views &#8226; 1 week ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/car-nachdi.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Gippy Grewal Feat Bohemia: Car Nachdi Official Video | 
+                </span>
+                <span>
+                  T-Series<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  9.2M views &#8226; 1 weak ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/gangland.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Gangland (Full Song) | Mankirt Aulakh Feat Deep 
+                </span>
+                <span>
+                  Speed Records<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  19M views &#8226; 1 month ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/suno-sardar-ji.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  SUNO SARDAR JI by Mehtab Virk Ft. Oshin Brar | 
+                </span>
+                <span>
+                  T-Series Apna Punjab<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  12M views &#8226; 3 weeks ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/landers.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  The Landers - King Queen | Mr V Grooves | Latest  
+                </span>
+                <span>
+                  Sony Music India<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  5.7M views &#8226; 7 months ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/kolaveri.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  3 - Why This Kolaveri Di Official Video | Dhanush,  
+                </span>
+                <span>
+                  Sony Music India<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  123M views &#8226; 5 years ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/glourous-gallan.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Glorious Gallan | Super Singh | Diljit Dosanjh & Sonam
+                </span>
+                <span>
+                  Zee Music Company<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  3.2M views &#8226; 3 weeks ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/blush.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Deep Money: Blush (Full Song) | Enzo | Mintu Sohi |  
+                </span>
+                <span>
+                  T-Series Apna Punjab<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  7.6M views &#8226; 4 months ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/mein-tera.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  Main Tera Boyfriend Lyrical Video | Raabta | Arijit Singh |  
+                </span>
+                <span>
+                  T-Series<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  17M views &#8226; 1 month ago
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li class="vd-section_container-list--item">
+            <ul>
+              <li class="vd-section_container-list--item-img">
+                <img src="assets/i/thumbnails/3-peg.jpg" class="thumbnail-img">
+              </li>
+              <li class="vd-section_container-list--item-info">
+                <span>
+                  "3 Peg Sharry Mann" (Full Video) | Mista Baaz | Parmish  
+                </span>
+                <span>
+                  T-Series Apna Punjab<img src="assets/i/icons/verified.png">
+                </span>
+                <span>
+                  107M views &#8226; 6 months ago
+                </span>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <script type="text/javascript">
+        $('button.left-btn_white-hill-music').click(function() {
+          var scrollLeftAmount = 570;
+          $('.container_white-hill-music').animate({
+            scrollLeft: '-=' + scrollLeftAmount
+          }, 200)
+        });
+
+        $('button.right-btn_white-hill-music').click(function() {
+
+
+          if ($(window).width() <= 500) {
+            var scrollLeftAmount = 300;
+          } else {
+            var scrollLeftAmount = 570;
+          }
+
+
+          $('.container_white-hill-music').animate({
+            scrollLeft: '+=' + scrollLeftAmount
+          }, 200);
+        });
+      </script>
+        <div class="m-line-break break-has-size">
+        
+        </div>
+    </article>
+  </section>
+  <script type="text/javascript">
+    var b = $('html');
+
+$('.dropdown-content').hover(function() {
+    var s = b.scrollTop();    
+    b.css('overflow', 'hidden');
+    b.scrollTop(s);
+}, function() {
+    var s = b.scrollTop();   
+    b.css('overflow', 'auto');
+    b.scrollTop(s);
+});
+  </script>
+</body>
+
+</html>

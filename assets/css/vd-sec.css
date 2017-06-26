@@ -1,0 +1,251 @@
+.vd-section{
+  padding:65px 75px 0px 75px;
+}
+.vd-section-box{
+  
+}
+.channel-info{
+  padding:15px 0 15px 0;
+  max-width:1305px;
+  margin:auto;
+}
+.channel-info div:nth-child(1){
+  float:left;
+}
+.channel-info div:nth-child(2){
+  float:right;
+}
+.channel-name img{
+  height:32.5px;
+  width:32.5px;
+  border-radius:32.5px;
+  float:left;
+  margin-left:12px;
+}
+.channel-name h1{
+  float:left;
+  color:white;
+  font:16px roboto;
+  margin:7px 12.5px;
+}
+.subs-link-container{
+  padding:7.5px 15px;
+  margin-right:12px;
+  background-color:rgb(218,31,22);
+}
+.subs-link-container a{
+  color: white;
+  font:16px roboto;
+  text-decoration:inherit;
+  font-weight:400;
+}
+.vd-section_container {
+  /text-align: center;
+  max-width: 1285px;
+  white-space: nowrap;
+  overflow-x:hidden;
+  margin: 40px auto;
+  font-family:roboto;
+}
+
+.vd-section_container-list {
+  width: 3000px;
+  padding: 0px;
+}
+
+.vd-section_container-list--item {
+  display: inline-block;
+  /padding: 40px;
+  /background-color: red;
+  width: 100px;
+  margin: 0px 2px 0px 2px;
+  float: left;
+  white-space: normal !important;
+  height:205px;
+  width:210px;
+  cursor:pointer;
+}
+
+.vd-section_container-list--item ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+.vd-section_container-list--item ul li:nth-child(1){
+  height:119px;
+  width:210px;
+  /list-style:none;
+}
+.thumbnail-img{
+  height:119px;
+  width:210px;
+}
+.vd-section_container-list--item ul li:nth-child(2){
+  font-size:14px;
+  font-weight:400;
+  padding:7px 0 0 0;
+} 
+.vd-section_container-list--item ul li:nth-child(2) span{
+  padding:0 15px 0 0;
+  color:white;
+  line-height:17px;
+  display:inline-block;
+}
+.vd-section_container-list--item ul li:nth-child(2) span:nth-child(2){
+  padding:7.5px 0;
+  font-weight:bolder;
+}
+.vd-section_container-list--item ul li:nth-child(2) span:nth-child(2) img{
+  float:right;
+}
+.vd-section_container-list--item ul li:nth-child(2) span:nth-child(3){
+  /padding:7.5px 0;
+  font-weight:400;
+  margin-top:-5px;
+  color:hsl(0, 0%, 47.7%);
+  float:left;
+}
+.jaartal{
+  
+}
+
+.ondertitel { 
+  
+}
+
+button {
+  background-color: #232323;
+  color: #fff;
+  border: 0px;
+  box-shadow: 0px;
+  font-size: 20px;
+  border-radius: 50px;
+  height:50px;
+  width:50px;
+  overflow:hidden;
+  cursor:pointer;
+}
+button:focus {
+  outline: 0;
+}
+i {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  margin-bottom:5px;
+  margin-right:20px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+.left-scroll-btn{
+  position:absolute;
+  margin-top:30px;
+  margin-left:-20px;
+}
+.right-scroll-btn{
+  position:absolute;
+  margin-left:1257px;
+  margin-top:30px;
+}
+.left-scroll-btn:hover > .scroll-btn_arrow-bg{
+  background-color:#4e4e4e;
+  animation:0.1s fadeup ease;
+}
+.right-scroll-btn:hover > .scroll-btn_arrow-bg{
+  background-color:#4e4e4e;
+  animation:0.1s fadeup ease;
+}
+.scroll-btn_arrow-bg{
+  border-radius: 50px;
+  height:50px;
+  width:50px;
+  position:absolute;
+  margin-top:-17px;
+  /margin-left:-3px;
+}
+@keyframes fadeup{
+  0%{
+    opacity:0;
+    height:0px;
+    width:0px;
+    margin-top:8px;
+    margin-left:14px;
+  }
+}
+.break-has-size{
+  margin:auto;
+  max-width:1305px;
+  margin-top:-17px;
+}
+@media screen and (max-width: 1435px) {
+  .vd-section_container {
+    width: 1070px;
+  }
+
+  .right-scroll-btn{
+    margin-left:1042px;
+  }
+}
+
+@media screen and (max-width: 1230px) {
+  .vd-section_container {
+    width: 856px;
+  }
+
+  .right-scroll-btn{
+    margin-left:830px;
+  }
+}
+@media screen and (max-width: 1015px) {
+  .vd-section_container {
+    width: 643px;
+  }
+
+  .right-scroll-btn{
+    margin-left:615px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .vd-section_container {
+    width: 425px;
+  }
+
+  .right-scroll-btn{
+    margin-left:400px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .vd-section_container {
+    width: 215px;
+  }
+  .left-scroll-btn, .right-scroll-btn{
+    display:none;
+  } 
+  .vd-section_container-list {
+    width: 0px;
+    padding: 0px;
+  }
+  .vd-section_container-list--item{
+    margin:10px 0;
+  }
+  .channel-info div:nth-child(2){
+    display:none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .vd-section{
+    padding:65px 0 0 0;
+  }
+}
+
+
+
